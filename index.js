@@ -33,6 +33,15 @@ app.get("/api/:date", (req, res) => {
   });
 });
 
+// respond with current unix time string & utc date string when no date param
+app.get("/api", (req, res) => {
+  const today = new Date();
+  res.json({
+    unix: today.getTime(),
+    utc: today.toUTCString()
+  })
+})
+
 // Listen on port set in environment variable or default to 3000
 const listener = app.listen(process.env.PORT || 3000, () => {
   console.log('Your app is listening on port ' + listener.address().port);
