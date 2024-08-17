@@ -2,6 +2,7 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
+	height: 100vh;
 	font-size: 16px;
 	color: #222;
 	background-color: #FaFaFa;
@@ -9,38 +10,20 @@ body {
 	line-height: 1.4em;
 }
 
+form {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+}
+
 .container {
 	padding: 0;
 	margin-top: 40px;
-}
-
-h3 {
-  margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
 }
 
 hr {
 	margin: 25px;
-}
-
-.footer {
-	margin-top: 40px;
-}
-
-code {
-  font-family: monospace;
-  padding: 2px;
-  color: black;
-  background-color: #fff;
-}
-
-ul {
-	list-style-type: none;
-}
-
-li {
-  margin-bottom: 0.5em;
-}
-
-a {
-	color: #2574A9;
 }
